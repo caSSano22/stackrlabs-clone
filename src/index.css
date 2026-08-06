@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-stackr-bg: #051A21;
+  --color-stackr-cyan: #44EAE5;
+  --color-stackr-[#4BE9FF]: #4BE9FF;
+  --color-stackr-silver: #CEDCE1;
+  --color-stackr-[#6193A4]: #6193A4;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #051A21;
+  color: #CEDCE1;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Button Styles */
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #44EAE5;
+  color: #000000;
+  border-radius: 9999px;
+  padding: 18px 40px;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background-color: #00FFF0;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(68, 234, 229, 0.3);
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CEDCE1;
+  color: #000000;
+  border-radius: 9999px;
+  padding: 18px 40px;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: #E4EBEE;
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #051A21;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #44EAE5;
+  border-radius: 6px;
+}
